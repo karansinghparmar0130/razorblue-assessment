@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2F484798-2255-4F2D-B098-AF33349BE61C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razorblue.Anagram", "src\Razorblue.Anagram\Razorblue.Anagram.csproj", "{E53C3B84-2F66-475F-B5D4-845B86A04691}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7470F457-5CAC-44BB-BC70-6966A527F44D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razorblue.Anagram.Tests", "test\Razorblue.Anagram.Tests\Razorblue.Anagram.Tests.csproj", "{3D478E6C-765C-4224-A27F-D4E5F0886D8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razorblue.IPFiltering", "src\Razorblue.IPFiltering\Razorblue.IPFiltering.csproj", "{D41E71E0-89AC-47C1-A263-32873F01D2F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razorblue.IPFiltering.Tests", "test\Razorblue.IPFiltering.Tests\Razorblue.IPFiltering.Tests.csproj", "{C5C45790-3722-4417-93B8-CE3AFB26F8B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E53C3B84-2F66-475F-B5D4-845B86A04691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53C3B84-2F66-475F-B5D4-845B86A04691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53C3B84-2F66-475F-B5D4-845B86A04691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53C3B84-2F66-475F-B5D4-845B86A04691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D478E6C-765C-4224-A27F-D4E5F0886D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D478E6C-765C-4224-A27F-D4E5F0886D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D478E6C-765C-4224-A27F-D4E5F0886D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D478E6C-765C-4224-A27F-D4E5F0886D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41E71E0-89AC-47C1-A263-32873F01D2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41E71E0-89AC-47C1-A263-32873F01D2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41E71E0-89AC-47C1-A263-32873F01D2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41E71E0-89AC-47C1-A263-32873F01D2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C45790-3722-4417-93B8-CE3AFB26F8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C45790-3722-4417-93B8-CE3AFB26F8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C45790-3722-4417-93B8-CE3AFB26F8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C45790-3722-4417-93B8-CE3AFB26F8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E53C3B84-2F66-475F-B5D4-845B86A04691} = {2F484798-2255-4F2D-B098-AF33349BE61C}
+		{3D478E6C-765C-4224-A27F-D4E5F0886D8E} = {7470F457-5CAC-44BB-BC70-6966A527F44D}
+		{D41E71E0-89AC-47C1-A263-32873F01D2F5} = {2F484798-2255-4F2D-B098-AF33349BE61C}
+		{C5C45790-3722-4417-93B8-CE3AFB26F8B2} = {7470F457-5CAC-44BB-BC70-6966A527F44D}
+	EndGlobalSection
+EndGlobal
