@@ -7,7 +7,7 @@ public class Worker(IpFilteringService ipFilteringService) : IHostedService
 {
     public Task StartAsync(CancellationToken cancellationToken)
     {
-        Console.WriteLine("Task 2 - IP filtering started");
+        Console.WriteLine("Task 2 - IP Filtering");
 
         while (true)
         {

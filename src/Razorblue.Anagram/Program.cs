@@ -1,6 +1,6 @@
 ﻿using Razorblue.Anagram;
 
-Console.WriteLine("Task 1 - Anagram started");
+Console.WriteLine("Task 1 - Anagram");
 
 while (true)
 {

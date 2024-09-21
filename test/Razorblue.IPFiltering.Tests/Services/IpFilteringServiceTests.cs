@@ -26,6 +26,9 @@ public class IpFilteringServiceTests
 
         // Assert
         Assert.False(actual);
+        _ipRepositoryMock.Verify(x => 
+            x.GetIpDescriptors(), 
+            Times.Once);
     }
 
     [Theory]
@@ -39,6 +42,9 @@ public class IpFilteringServiceTests
         // Act & Assert
         var actual = Assert.Throws<ArgumentException>(() => _sut.IsIpAvailable(inputIp));
         Assert.Equal(expected: exceptionMessage, actual.Message);
+        _ipRepositoryMock.Verify(x => 
+                x.GetIpDescriptors(), 
+            Times.Never);
     }
 
     [Theory]
@@ -58,6 +64,9 @@ public class IpFilteringServiceTests
 
         // Assert
         Assert.Equal(isAllowed, actual);
+        _ipRepositoryMock.Verify(x => 
+                x.GetIpDescriptors(), 
+            Times.Once);
     }
 
     private static IEnumerable<IpDescriptor> GetAllowedList()
