@@ -26,8 +26,8 @@ public class IpFilteringServiceTests
 
         // Assert
         Assert.False(actual);
-        _ipRepositoryMock.Verify(x => 
-            x.GetIpDescriptors(), 
+        _ipRepositoryMock.Verify(x =>
+                x.GetIpDescriptors(),
             Times.Once);
     }
 
@@ -42,8 +42,8 @@ public class IpFilteringServiceTests
         // Act & Assert
         var actual = Assert.Throws<ArgumentException>(() => _sut.IsIpAvailable(inputIp));
         Assert.Equal(expected: exceptionMessage, actual.Message);
-        _ipRepositoryMock.Verify(x => 
-                x.GetIpDescriptors(), 
+        _ipRepositoryMock.Verify(x =>
+                x.GetIpDescriptors(),
             Times.Never); // In case of invalid IPs, Repository should not be accessed
     }
 
@@ -64,14 +64,13 @@ public class IpFilteringServiceTests
 
         // Assert
         Assert.Equal(isAllowed, actual);
-        _ipRepositoryMock.Verify(x => 
-                x.GetIpDescriptors(), 
-            Times.Once);  // In case of valid IPs, Repository should be accessed
+        _ipRepositoryMock.Verify(x =>
+                x.GetIpDescriptors(),
+            Times.Once); // In case of valid IPs, Repository should be accessed
     }
 
-    private static IEnumerable<IpDescriptor> GetAllowedList()
-    {
-        return new[]
+    private static IEnumerable<IpDescriptor> GetAllowedList() =>
+        new[]
         {
             new IpDescriptor
             {
@@ -91,5 +90,4 @@ public class IpFilteringServiceTests
                 StartIp = "3.3.3.3"
             }
         };
-    }
 }
