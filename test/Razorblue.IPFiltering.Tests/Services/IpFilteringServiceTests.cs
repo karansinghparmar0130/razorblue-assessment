@@ -44,7 +44,7 @@ public class IpFilteringServiceTests
         Assert.Equal(expected: exceptionMessage, actual.Message);
         _ipRepositoryMock.Verify(x => 
                 x.GetIpDescriptors(), 
-            Times.Never);
+            Times.Never); // In case of invalid IPs, Repository should not be accessed
     }
 
     [Theory]
@@ -66,7 +66,7 @@ public class IpFilteringServiceTests
         Assert.Equal(isAllowed, actual);
         _ipRepositoryMock.Verify(x => 
                 x.GetIpDescriptors(), 
-            Times.Once);
+            Times.Once);  // In case of valid IPs, Repository should be accessed
     }
 
     private static IEnumerable<IpDescriptor> GetAllowedList()
