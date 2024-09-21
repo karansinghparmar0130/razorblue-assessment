@@ -36,7 +36,9 @@ while (true)
             Console.WriteLine("No records processed");
         else
         {
-            // Header
+            // Provide a list of vehicles that match the following criteria for a valid, current style registration
+            Console.WriteLine("Records with valid Registration");
+            // Add Header
             Console.WriteLine("Car Registration,Make,Model,Colour,Fuel");
             var invalidCount = 0;
             foreach (var record in processedRecords)
